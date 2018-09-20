@@ -10,6 +10,9 @@ export declare class SVGImage extends View implements definition.SVGImage {
     isLoading: boolean;
     loadMode: "sync" | "async";
     constructor(options?: definition.Options);
+    /**
+     * @internal
+     */
     _createImageSourceFromSrc(): void;
 }
 export declare function fromResource(name: string): definition.ImageSourceSVG;

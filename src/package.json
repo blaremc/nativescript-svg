@@ -1,5 +1,5 @@
 {
-  "name": "@teammaestro/nativescript-svg",
+  "name": "@exeleon/nativescript-svg",
   "version": "1.0.1",
   "description": "NativeScript SVG plugin",
   "main": "svg",
@@ -15,11 +15,12 @@
     "demo.ios": "npm run preparedemo ; cd demo ; tns emulate ios",
     "demo.android": "npm run preparedemo ; cd demo ; tns run android",
     "preparedemo": "npm run build ; cd demo ; tns plugin remove nativescript-svg ; tns plugin add .. ; tns install",
-    "setup": "cd demo ; npm install ; cd .. ; npm run build ; cd demo ; tns plugin add .. ; cd .."
+    "setup": "cd demo ; npm install ; cd .. ; npm run build ; cd demo ; tns plugin add .. ; cd ..",
+    "ngc": "./node_modules/.bin/ngc --p tsconfig.ngc.json"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/peoplewareDo/nativescript-svg.git"
+    "url": "https://github.com/exeleon/nativescript-svg.git"
   },
   "keywords": [
     "NativeScript",
@@ -40,21 +41,21 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/peoplewareDo/nativescript-svg/issues"
+    "url": "https://github.com/exeleon/nativescript-svg/issues"
   },
   "license": "MIT",
-  "homepage": "https://github.com/peoplewareDo/nativescript-svg",
+  "homepage": "https://github.com/exeleon/nativescript-svg",
   "readmeFilename": "README.md",
   "devDependencies": {
-    "tns-core-modules": "^3.0.0 || ^3.0.0-rc.1",
-    "tns-platform-declarations": "^3.0.0 || ^3.0.0-rc.1",
-    "typescript": "^2.2.2",
-    "nativescript-angular": "^3.0.0 || ^2.0.0-rc.1",
-    "@angular/core": "~4.0.1",
-    "@angular/common": "~4.0.1",
-    "@angular/compiler": "~4.0.1",
-    "@angular/compiler-cli": "~4.0.1",
-    "rxjs": "~5.3.0",
-    "zone.js": "~0.8.4"
+    "@angular/common": "~6.1.8",
+    "@angular/compiler": "~6.1.8",
+    "@angular/compiler-cli": "~6.1.8",
+    "@angular/core": "~6.1.8",
+    "nativescript-angular": "~6.1.0",
+    "rxjs": "~6.3.2",
+    "tns-core-modules": "~4.2.0",
+    "tns-platform-declarations": "~4.2.0",
+    "typescript": "~2.8.2",
+    "zone.js": "~0.8.26"
   }
 }

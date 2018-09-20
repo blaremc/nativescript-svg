@@ -1,11 +1,16 @@
 src/*.js
 src/*.js.map
 src/node_modules
+src/**/*metadata.json
 demo/*.d.ts
 demo/platforms
 demo/node_modules
 demo-angular/*.d.ts
 demo-angular/platforms
 demo-angular/node_modules
+publish/src
+publish/package
+publish/package-lock.json
+publish/node_modules
 .vscode
 *.DS_Store
